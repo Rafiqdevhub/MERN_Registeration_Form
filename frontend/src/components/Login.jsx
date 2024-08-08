@@ -35,7 +35,6 @@ const Login = () => {
         config
       );
 
-      // Store token and redirect to dashboard
       localStorage.setItem("token", res.data.token);
       navigate("/dashboard");
     } catch (err) {
